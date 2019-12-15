@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/news/user/Home.vue'
-import Login from '../views/news/user/Login.vue'
+//新闻首页
+import News_Home from '../views/News/User/News Home/News_Home'
+//用户登录
+import Login from '../views/News/User/Login'
+//新闻详情页面
+// import News_Information from '../views/News/User/News_Information/News_Information.vue'
 
 Vue.use(VueRouter)
 
@@ -12,17 +16,20 @@ const routes = [
         component: Login
     },
     {
-        path: '/',
-        name: 'home',
-        component: Home
+        path: '/News_Home',
+        name: 'News_Home',
+        component: News_Home
     },
+    /*  {
+          path: '/about',
+          name: 'about',
+          component: () => import(/!* webpackChunkName: "about" *!/ '../views/News/User/About.vue')
+      }
+      ,*/
     {
-        path: '/about',
-        name: 'about',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/news/user/About.vue')
+        path:'/News_Information',
+        name:'News_Information',
+        component:()=>import('../views/News/User/News_Information/News_information')
     }
 ]
 
