@@ -9,6 +9,7 @@ import Login from '../views/News/User/Login'
 
 Vue.use(VueRouter)
 
+
 const routes = [
     {
         path: '/Login',
@@ -27,11 +28,12 @@ const routes = [
       }
       ,*/
     {
-        path:'/News_Information',
-        name:'News_Information',
-        component:()=>import('../views/News/User/News_Information/News_information')
+        path: '/News_Information',
+        name: 'News_Information',
+        component: () => import('../views/News/User/News_Information/News_information')
     }
 ]
+
 
 const router = new VueRouter({
     mode: 'history',

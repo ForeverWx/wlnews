@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*头部 右侧ul*/
+.header_ul {
+  margin-top: 10px;
+  margin-left: 190px;
+  list-style: none;
+}
+
+/*头部右侧 li*/
+.header_ul_li {
+  width: 100px;
+}
+
+.header_ul_li:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*新闻文章标题*/
+.news_title {
+  position: relative;
+  margin-top: 60px;
+  font-weight: bolder;
+  font-size: 40px;
+  text-indent: 2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-family: 'Microsoft JhengHei UI';
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+}
+
+/*新闻内容文字*/
+.article_content_text {
+  position: relative;
+  text-align: left;
+  margin-left: 30px;
+  line-height: 45px;
+  font-size: 20px;
+  text-indent: 2em;
+  letter-spacing: 0.5px;
+  width: 820px;
+}
+
+/*新闻 内容 图片*/
+.article_content_img {
+  text-align: center;
+}
+
+/*新闻 右侧 作者 ul*/
+.article_author_content_ul {
+  position: relative;
+  list-style: none;
+}
+
+/*新闻作者头像 p*/
+.article_author_content_ul_li_Head_Portraits_p {
+  width: 90px;
+}
+
+/*新闻作者名称*/
+.article_author_content_ul_li_name {
+  height: 24px;
+  width: 170px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/*右侧作者 关注按钮*/
+.article_author_content_ul_li_fllower {
+  width: 70px;
+  height: 23px;
+  font-weight: bold;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.article_author_content_ul_li_fllower:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*右侧作者最新发布文章*/
+.article_author_laster_article_ul {
+  list-style: none;
+}
+
+/*最新发布文章 li*/
+.article_author_laster_article_ul li {
+  font-size: 16px;
+  text-indent: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-family: 'Microsoft JhengHei UI';
+  line-height: 49px;
+  /*限制行数*/
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /*字体间隔*/
+  letter-spacing: 0.1em;
+}
+
+.article_author_laster_article_ul li:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*相关文章 控制*/
+.Related_Articles {
+  position: relative;
+  width: 330px;
+  top: 50px;
+}
+
+/*相关文章标题*/
+.Related_Articles_title {
+  width: 100px;
+  color: royalblue;
+  border-bottom: 2px dodgerblue solid;
+}
+
+/*相关文章 标题 事件*/
+.Related_Articles_title:hover {
+  color: cornflowerblue;
+  cursor: pointer;
+  border-bottom: 2px deepskyblue solid;
+}
+
+/*右侧新闻作者 相关文章控制*/
+.article_author_div{
+  position: relative;
+  left: 20px;
+  width: 340px;
+}
+
+/*右侧作者内容控制*/
+.author_div{
+  position: relative;
+  left: 10px;
+  width: 310px;
+}
+/*相关文章ul*/
+.Related_Articles_title_ul {
+  position: relative;
+  list-style: none;
+}
+
+/*相关文章 内容 文字*/
+.Related_Articles_title_ul_text {
+  position: relative;
+  //width: 142px;
+  font-weight: bolder;
+  text-indent: 2em;
+  font-size: 15px;
+  line-height: 28px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-family: 'Microsoft JhengHei UI';
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+}
+
+/*相关文章文字事件*/
+.Related_Articles_title_ul_text:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*相关文章内容图片*/
+.Related_Articles_title_ul_img:hover {
+  position: relative;
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*评论 文章 中间控制区*/
+.control_zone {
+  height: 200px;
+}
+
+/*最新评论标题*/
+.latest_comments_title {
+  width: 120px;
+  font-weight: bolder;
+  color: cornflowerblue;
+  border-bottom: 2px deepskyblue solid;
+}
+
+/*评论用户ul*/
+.latest_comments_content_ul {
+  list-style: none;
+}
+
+/*评论用户昵称*/
+.latest_comments_name {
+  width: 40px;
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*评论用户昵称 事件*/
+.latest_comments_name:hover {
+  color: cornflowerblue;
+}
+
+/*评论回复*/
+.latest_comments_reply:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+
+.latest_comments_reply_count {
+  width: 100px;
+  color: cornflowerblue;
+}
+
+/*评论内容*/
+.latest_comments_content_p {
+  line-height: 30px;
+  font-size: 15px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif
+}
+
+/*回复评论面板*/
+.latest_comments_panel {
+}
+
+/*点赞 评论*/
+.latest_comments_reply_praize {
+  width: 60px;
+  color: cornflowerblue;
+}
+
+.latest_comments_reply_praize:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+.latest_comments_reply_report:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*评论提交文字*/
+.latest_comments_textarea_submit_p {
+  color: white;
+  padding-top: 40px;
+}
+
+/*评论提交按钮 div*/
+.latest_comments_textarea_submit_div {
+  width: 60px;
+  background-color: dodgerblue;
+}
+
+.latest_comments_textarea_submit_div:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+
+/*评论提交控制div*/
+.latest_comments_textarea_submit_div {
+  margin-top: 10px;
+  height: 110px;
+}
+
+/*textarea 文本框*/
+.latest_comments_textarea {
+  overflow: hidden;
+}
+
+/*评论回复列表*/
+.latest_comments_reply_list {
+}
+
+/*回复当前评论者昵称*/
+.latest_comments_reply_list_nick {
+  font-weight: bolder;
+  font-size: 15px;
+  color: black;
+}
+
+.latest_comments_reply_list_nick:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*回复 当前评论 */
+.latest_comments_reply_list_operate {
+  font-size: 10px;
+  color: darkgray;
+}
+
+/*评论控制 card li 悬浮显示举报按钮*/
+.latest_comments_card_li:hover .latest_comments_reply_report {
+  display: inline;
+  width: 25px;
+}
+
+/*对回复者举报 按钮*/
+.latest_comments_reply_report {
+  font-size: 12px;
+  position: absolute;
+  color: gray;
+  display: none;
+  right: 20px;
+}
+
+/*对回复者举报*/
+.latest_comments_reply_list_report_div {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+.latest_comments_reply_people_report {
+  display: none;
+}
+
+.latest_comments_reply_people_report:hover {
+  cursor: pointer;
+  color: #1479D7;
+}
+
+/*评论用户回复内容*/
+.latest_comments_reply_list:hover .latest_comments_reply_people_report {
+  display: inline;
+}
+
+/*隐藏回复文章者举报按钮*/
+.latest_comments_reply_list:hover .latest_comments_reply_report {
+  display: none;
+}

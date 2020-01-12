@@ -32,11 +32,13 @@ module.exports = {
     pwa: {},
     // webpack-dev-server 相关配置
     devServer: {
+        //内网穿透禁用域名检查
+        disableHostCheck: true,
         hot: true,
         open: true,                                 //配置自动启动浏览器
         host: '0.0.0.0',
         // host: 'localhost',
-        port: 8080,                                 // 端口号
+        port: 2001,                                 // 端口号
         https: false,
         hotOnly: false,                             // https:{type:Boolean}
         // 配置跨域处理,只有一个代理
@@ -44,6 +46,19 @@ module.exports = {
         }
     },
     // 第三方插件配置
-    pluginOptions: {}
-}
+    pluginOptions: {},
+    dev: {
+        // Paths
+        assetsSubDirectory: 'static',
+        assetsPublicPath: './',
+        proxyTable: {
+            '/baiduApi': {
+                target: 'https://www.baidu.com', //访问地址
+                changeOrigin: true,
+                secure: false, //只有代理https 地址需要次选项
+                pathRewrite: {
+                    '^/': ''
+                }
+            }
+        }
 
