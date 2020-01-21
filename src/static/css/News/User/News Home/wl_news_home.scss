@@ -3,9 +3,40 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   /*禁止选中*/
-  -moz-user-select:none;
-  -webkit-user-select:none;
-  user-select:none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /*禁止缩放*/
+  min-height: 1000px;
+  min-width: 1524px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*网页控制*/
+#web_control {
+  background-color: #FFFFFF;
+}
+
+/*网页内容控制 头部 菜单 中部 底部*/
+#head_content_control, #menu_content_control, #central_control_control {
+  //background-color: rgb(78, 139, 255);
+  background-color: #FFFFFF;
+}
+
+/*网页内容控制 头部 中部 底部 大小*/
+#head_content_control, #central_control_control {
+  position: relative;
+  width: 85%;
+  left: 7.5%;
+}
+
+/*网页内容控制*/
+#content_control {
+  background-color: #FFFFFF;
+  width: 85%;
+  position: relative;
+  left: 7.5%;
 }
 
 
@@ -139,7 +170,7 @@ body {
 }
 
 /*视觉焦点标题div*/
-.visual_focus_title_div {
+.visual_subject_title_div {
   border-bottom: 1px solid lightskyblue;
 }
 
@@ -267,28 +298,43 @@ body {
 /*地方新闻 事件 ul li*/
 .location_news_ul li:hover {
   cursor: pointer;
-  color: royalblue;
+  color: #3c6cc3;
+}
+
+/*菜单row*/
+.menu_row {
+  margin-top: 30px;
+  background-color: rgba(58, 95, 180, 0.88);
 }
 
 /*菜单*/
 .menu {
-  background-color: #1479D7;
+  margin-top: 10px;
+  //background-color: rgba(20, 107, 191, 0.85);
 }
 
 /*菜单 ul*/
 .menu_ul {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  position: relative;
+  height: 32px;
+  margin: auto 0px;
+  list-style: none;
 }
 
 .menu_ul_li {
+  font-size: 19px;
   position: relative;
-  padding-left: 12px;
-  margin-left: 12.4px;
-  padding-right: 12px;
-  width: auto;;
+  margin-left: 40px;
   float: left;
   color: white;
+
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
 }
 
 /*菜单li 悬停*/
@@ -463,21 +509,21 @@ div {
 }
 
 /*视觉焦点 */
-.visual_focus_title {
+.visual_subject_title {
   width: 100px;
   color: royalblue;
   border-bottom: 3px dodgerblue solid;
 }
 
 /*视觉焦点事件*/
-.visual_focus_title:hover {
+.visual_subject_title:hover {
   color: cornflowerblue;
   cursor: pointer;
   border-bottom: 3px deepskyblue solid;
 }
 
 /*视觉焦点 内容 标题*/
-.visual_focus_content_p {
+.visual_subject_content_p {
   width: 205px;
   display: -webkit-box;
   line-height: 26px;
@@ -498,18 +544,18 @@ div {
   font-family: 微软雅黑, tahoma;
 }
 
-.visual_focus_content_p:hover {
+.visual_subject_content_p:hover {
   color: cornflowerblue;
   cursor: pointer;
 }
 
-.visual_focus_content_img:hover {
+.visual_subject_content_img:hover {
   color: cornflowerblue;
   cursor: pointer;
 }
 
 /*视觉焦点 row 行*/
-.visual_focus {
+.visual_subject {
   overflow: hidden;
 }
 
@@ -813,16 +859,34 @@ div {
 }
 
 /*视觉焦点 图片溢出隐藏*/
-.visual_focus_content_img {
+.visual_subject_content_img {
   width: 216px;
   height: 120px;
   overflow: hidden;
 }
 
-.visual_focus_content_img img {
+.visual_subject_content_img img {
   transition: .5s ease-in-out;
 }
 
-.visual_focus_content_img img:hover {
+.visual_subject_content_img img:hover {
   transform: scale(1.1);
+}
+
+/*新闻底部*/
+.bottom_aboutme_ul {
+  position: relative;
+  margin: auto auto;
+  list-style: none;
+}
+
+.bottom_aboutme_ul_li {
+  width: 100px;
+  float: left;
+}
+
+/*底部控制 bottom*/
+#bottom{
+ position: relative;
+  top: 20px;
 }

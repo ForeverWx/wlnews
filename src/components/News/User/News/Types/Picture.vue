@@ -1,11 +1,10 @@
-<!--综合页面首页-->
 <template>
-
+    <v-content>图片</v-content>
 </template>
 
 <script>
     export default {
-        name: "Synthesize"
+        name: "Picture"
     }
 </script>
 

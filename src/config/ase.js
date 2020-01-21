@@ -1,34 +1,66 @@
 /***
  * aes Base64 方式加密解密
  */
-const CryptoJS = require('crypto-js');  //引用AES源码js
-const key = CryptoJS.enc.Utf8.parse("FFff123456.!-12ss");  //十六位十六进制数作为密钥
-const iv = CryptoJS.enc.Utf8.parse('FFff123456.!-12ss');   //十六位十六进制数作为密钥偏移量
+import CryptoJS from 'crypto-js/crypto-js' //引用AES源码js
+//默认key、iv
+const KEY = CryptoJS.enc.Utf8.parse("D,6nFr.xK!9IoPw8");//十六位十六进制数作为密钥
+const IV = CryptoJS.enc.Utf8.parse('D,6nFr.xK!9IoPw8');
+/**
+ * aes加密
+ * @param word
+ * @param keyStr
+ * @param ivStr
+ * @returns {*|string}
+ * @constructor
+ */
+var aes = {
+    Encrypt(word, keyStr, ivStr) {
+        let key = KEY
+        let iv = IV
 
-//解密方法
-function Decrypt(word) {
-    let base64 = CryptoJS.enc.Base64.parse(word);
-    let src = CryptoJS.enc.Base64.stringify(base64);
-    var decrypt = CryptoJS.AES.decrypt(src, key, {iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.ZeroPadding});
-    var decryptedStr = decrypt.toString(CryptoJS.enc.Utf8);
-    return decryptedStr.toString();
-}
+        if (keyStr) {
+            key = CryptoJS.enc.Utf8.parse(keyStr);
+            iv = CryptoJS.enc.Utf8.parse(ivStr);
+        }
 
-//加密方法
-function Encrypt(word) {
-    let srcs = CryptoJS.enc.Utf8.parse(word);
-    var encrypted = CryptoJS.AES.encrypt(srcs, key, {
-        iv: iv,
-        mode: CryptoJS.mode.CBC,
-        padding: CryptoJS.pad.ZeroPadding
-    });
-    return CryptoJS.enc.Base64.stringify(encrypted.ciphertext);
-}
+        let srcs = CryptoJS.enc.Utf8.parse(word);
+        var encrypted = CryptoJS.AES.encrypt(srcs, key, {
+            iv: iv,
+            mode: CryptoJS.mode.CBC,
+            padding: CryptoJS.pad.ZeroPadding
+        });
+        // console.log("-=-=-=-", encrypted.ciphertext)
+        return CryptoJS.enc.Base64.stringify(encrypted.ciphertext);
 
-export default {
-    Decrypt,
-    Encrypt
+    },
+
+    /**
+     * AES 解密 ：字符串 key iv  返回base64
+     *
+     */
+    Decrypt(word, keyStr, ivStr) {
+        let key = KEY
+        let iv = IV
+
+        if (keyStr) {
+            key = CryptoJS.enc.Utf8.parse(keyStr);
+            iv = CryptoJS.enc.Utf8.parse(ivStr);
+        }
+
+        let base64 = CryptoJS.enc.Base64.parse(word);
+        let src = CryptoJS.enc.Base64.stringify(base64);
+
+        var decrypt = CryptoJS.AES.decrypt(src, key, {
+            iv: iv,
+            mode: CryptoJS.mode.CBC,
+            padding: CryptoJS.pad.ZeroPadding
+        });
+
+        var decryptedStr = decrypt.toString(CryptoJS.enc.Utf8);
+        return decryptedStr.toString();
+    }
 }
+export default aes;
 
 /*java 加密 解密文件*/
 /*package com.platform.util;

@@ -1,38 +1,74 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//新闻首页
-import News_Home from '../views/News/User/News Home/News_Home'
-//用户登录
-import Login from '../views/News/User/Login'
-//新闻详情页面
-// import News_Information from '../views/News/User/News_Information/News_Information.vue'
 
-Vue.use(VueRouter)
-
+Vue.use(VueRouter);
 
 const routes = [
-    {
+    {//用户登录
         path: '/Login',
         name: 'Login',
-        component: Login
+        component: resolve => require(['@/views/News/User/Login.vue'], resolve)
     },
     {
-        path: '/News_Home',
+        /*首页*/
+        path: '/',
         name: 'News_Home',
-        component: News_Home
-    },
-    /*  {
-          path: '/about',
-          name: 'about',
-          component: () => import(/!* webpackChunkName: "about" *!/ '../views/News/User/About.vue')
-      }
-      ,*/
-    {
+        component: resolve => require(['@/views/News/User/News Home/News_Home.vue'], resolve),
+        children: [
+            {
+                /*综合页*/
+                path: '/',
+                name: 'Synthesize',
+                component:resolve => require(['@/components/News/User/News/Types/Synthesize.vue'], resolve),
+            }, {
+                /*国内*/
+                path: '/Inland',
+                name: 'Inland',
+                component: resolve => require(['@/components/News/User/News/Types/Inland.vue'], resolve)
+            }, {
+                /*国际*/
+                path: '/International',
+                name: 'International',
+                component: resolve => require(['@/components/News/User/News/Types/International.vue'], resolve)
+            }, {
+                /*体育*/
+                path: '/Sports',
+                name: 'Sports',
+                component: resolve => require(['@/components/News/User/News/Types/Sports.vue'], resolve)
+            }, {
+                /*军事*/
+                path: '/Military',
+                name: 'Military',
+                component: resolve => require(['@/components/News/User/News/Types/Military.vue'], resolve)
+            }, {
+                /*娱乐*/
+                path: '/Recreation',
+                name: 'Recreation',
+                component: resolve => require(['@/components/News/User/News/Types/Recreation.vue'], resolve)
+            }, {
+                /*科技*/
+                path: '/Science',
+                name: 'Science',
+                component: resolve => require(['@/components/News/User/News/Types/Science.vue'], resolve)
+            }, {
+                /*历史*/
+                path: '/History',
+                name: 'History',
+                component: resolve => require(['@/components/News/User/News/Types/History.vue'], resolve)
+            }, {
+                /*图片*/
+                path: '/Picture',
+                name: 'Picture',
+                component: resolve => require(['@/components/News/User/News/Types/Picture.vue'], resolve)
+            }
+        ]
+    }, {
+        //新闻详情页面
         path: '/News_Information',
         name: 'News_Information',
-        component: () => import('../views/News/User/News_Information/News_information')
+        component: resolve => require(['../views/News/User/News_Information/News_information.vue'], resolve)
     }
-]
+];
 
 
 const router = new VueRouter({

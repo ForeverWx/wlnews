@@ -1,13 +1,13 @@
 /*禁止检查*/
 // 一、屏蔽F12 审查元素
 //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
-var h = window.innerHeight, w = window.innerWidth;
+/*var h = window.innerHeight, w = window.innerWidth;
 window.onresize = function () {
     if (h != window.innerHeight || w != window.innerWidth) {
         window.close();
         window.location = "about:blank";
     }
-}
+}*/
 
 /*好吧，你的开发者工具是单独的窗口显示，不会改变原来网页的高度和宽度， 但是你只要修改页面元素我就重新加载一次数据,让你无法修改页面元素（不支持IE9以下浏览器）*/
 /*
@@ -69,7 +69,7 @@ document.onkeydown = function () {
         window.event.keyCode = 505;
     }
     if (window.event && window.event.keyCode == 8) {
-        alert(str + "\n请使用Del键进行字符的删除操作！");
+        // alert(str + "\n请使用Del键进行字符的删除操作！");
         window.event.returnValue = false;
     }
     /*屏蔽 ctrl U*/
@@ -80,18 +80,18 @@ document.onkeydown = function () {
     }
     /*屏蔽ctrl shift  + C */
     if (window.event && window.event.shiftKey && window.event.ctrlKey && window.event.keyCode == 67) {
-        alert("ctrl shift  + C被禁用");
+        // alert("ctrl shift  + C被禁用");
         event.keyCode = 0;
         event.returnValue = false;
     }
     /*屏蔽ctrl shift  + I */
     if (window.event && window.event.shiftKey && window.event.ctrlKey && window.event.keyCode == 73) {
-        alert("ctrl shift  + I被禁用");
+        // alert("ctrl shift  + I被禁用");
         event.keyCode = 0;
         event.returnValue = false;
     }   /*屏蔽ctrl S */
     if (window.event && window.event.ctrlKey && window.event.keyCode == 83) {
-        alert("ctrl s 被禁用");
+        // alert("ctrl s 被禁用");
         event.keyCode = 0;
         event.returnValue = false;
     }

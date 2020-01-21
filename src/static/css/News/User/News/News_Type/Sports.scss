@@ -1,0 +1,760 @@
+/*体育新闻*/
+.Inland_body {
+  margin: 0;
+  padding: 0;
+}
+
+/*最新新闻 右侧 div控制*/
+.Inland_laster_news_div {
+  position: relative;
+  padding-bottom: 36px;
+  margin-left: 10px;
+  border-bottom: 1px solid darkgray;
+}
+
+/*vuetify 图片切换按钮*/
+.v-carousel__controls__item {
+  margin: 0;
+  left: 220px;
+}
+
+/*图片左右小箭头*/
+.v-window__next,.v-window__prev{
+  top:335px;
+  background-color: red;
+}
+
+/*定于 右侧 体育新闻图片*/
+.sports_top_right_image_div {
+  width: 450px;
+  height: 189px;
+  overflow: hidden;
+}
+
+/*//体育图片悬浮效果*/
+.sports_top_right_image_div img {
+  transition: 1.5s ease-in-out;
+}
+
+.sports_top_right_image_div img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+/*及时新闻 border 底部*/
+.Inland_laster_news_row_col6, .Inland_laster_news_row_col4 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid darkgray;
+}
+
+/*最新新闻 p*/
+.Inland_laster_news_div_p {
+  line-height: 40px;
+  border-bottom: 2px #5a584e solid;
+}
+
+/*最新新闻 ul*/
+.Inland_laster_news_div_ul_content {
+  list-style: none;
+}
+
+/*最新新闻标题*/
+.Inland_laster_news_div_ul_content li a {
+  color: black;
+  text-decoration: none;
+
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+/*最新新闻标题 悬停事件*/
+.Inland_laster_news_div_ul_content li a:hover {
+  color: rgba(171, 66, 58, 0.99);
+  text-decoration: underline;
+}
+
+/*最新新闻行样式*/
+.Inland_laster_news_div_ul_content li {
+  text-align: left;
+  line-height: 45px;
+  width: 435px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+/*标题*/
+.Inland_laster_news_div_p_title {
+  font-size: 26px;
+  font-weight: bolder;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-stretch: normal;
+  font-family: 楷体;
+}
+
+/*实时关注 焦点*/
+.Realtime_subject_div {
+  width: 712px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.Realtime_subject_div img {
+  transition: 1.5s ease-in-out;
+}
+
+.Realtime_subject_div img:hover {
+  transform: scale(1.1);
+}
+
+/*今日要闻 div*/
+.Inland_today_news_div {
+  //background-color: red;
+  border-bottom: 2px #5a584e solid;
+
+}
+
+/*今日要闻 标题*/
+.Inland_today_news_title {
+  font-size: 26px;
+  font-weight: bolder;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-stretch: normal;
+  font-family: 楷体;
+}
+
+/*今日要闻 主标题 下划线*/
+.Inland_today_news_p {
+  line-height: 40px;
+}
+
+/*今日要闻 热门专题 row*/
+.Inland_today_news_row {
+  position: relative;
+  top: -40px;
+  height: 60px;
+}
+
+/*今日要闻 左侧 div*/
+.Inland_today_news_left_div {
+  position: relative;
+  top: -7px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid darkgray;
+}
+
+/*今日要闻 左侧控制 图片*/
+.Inland_laster_news_div_picture {
+  position: relative;
+  padding-bottom: 42px;
+  border-bottom: 1px solid darkgray;
+}
+
+/*今日要闻Ul*/
+.Inland_today_news_ul {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*今日要闻 第一条 ul 样式*/
+.Inland_today_news_ul:first-child {
+  border-bottom: 1px solid rgba(169, 169, 169, 0.86);
+  width: 435px;
+}
+
+/*今日要闻第一个 li 字体有样式*/
+.Inland_today_news_ul li:first-child a {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/*今日要闻 第一个 li 文字溢出*/
+.Inland_today_news_ul li:first-child {
+  position: relative;
+  left: -10px;
+  height: 33px;
+  width: 420px;
+  /*  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    letter-spacing: 2px;*/
+  overflow: hidden;
+}
+
+/*今日要闻 li*/
+.Inland_today_news_ul li:not(:first-child) {
+  text-align: left;
+  line-height: 30px;
+  width: 320px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  //letter-spacing: 1px;
+  overflow: hidden;
+}
+
+/*今日要闻 文字*/
+.Inland_today_news_ul li a {
+  font-size: 15px;
+  width: 435px;
+
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+.Inland_today_news_ul li a:hover {
+  color: rgba(171, 66, 58, 0.99);
+  text-decoration: underline;
+}
+
+/*今日要闻 精选文章*/
+.Inland_today_news_selected_articles {
+  position: relative;
+  height: 150px;
+  width: 225px;
+  top: 35px;
+}
+
+.Inland_today_news_selected_articles a {
+  text-decoration: none;
+}
+
+.Inland_today_news_selected_articles a:hover .Inland_today_news_selected_articles_float_row_col_text {
+  color: rgb(237, 91, 81);
+  text-decoration: underline;
+}
+
+/*今日要闻 精选文章悬浮文字*/
+.Inland_today_news_selected_articles_float_row {
+  position: relative;
+  top: 122px;
+  left: 13px;
+}
+
+/*今日要闻精选文章 图片 悬浮文字*/
+.Inland_today_news_selected_articles_float_row_col_text {
+  font-size: 13px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.87);
+  width: 223px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  letter-spacing: 2px;
+  overflow: hidden;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+/*热门专题 ul 全部*/
+.subject_of_the_news {
+  height: 100px;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid cornflowerblue;
+}
+
+/*热门专题 ul排除第一个*/
+.subject_of_the_news:not(:first-child) {
+  margin-top: 10px;
+}
+
+/*热门专题 边框*/
+.subject_of_the_news:last-child {
+  border-bottom: 0;
+}
+
+/*热门专题 图片*/
+.subject_of_the_news li:first-child {
+  text-align: left;
+  width: 37%;
+  float: left;
+}
+
+/*热门专题 文字控制*/
+.subject_of_the_news li:last-child p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 10px;
+  width: 60%;
+  top: 8px;
+  line-height: 26px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/*热门专题 div控制*/
+.subject_of_the_news_div {
+  width: 90%;
+  margin: 0;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid darkgray;
+}
+
+/*热门专题 文字样式*/
+.subject_of_the_news li p a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+.subject_of_the_news li a:hover {
+  color: rgba(171, 66, 58, 0.99);
+  text-decoration: underline;
+}
+
+/*聚焦新闻 文字底部 媒体 更多控制*/
+.subject_of_the_news li p:last-child {
+  font-size: 14px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+/*聚焦新闻 文字底部 媒体 更多控制*/
+.subject_of_the_news li p:last-child span:hover {
+  cursor: pointer;
+  color: indianred;
+}
+
+/*新闻专题 今日新闻 row*/
+.Inland_today_news_subject_row {
+  position: relative;
+  top: -10px;
+}
+
+/*焦点新闻 热点排行 新闻标题*/
+.Inland_focus_news_title_div p, .Inland_hot_list_news_title_div p {
+  font-size: 26px;
+  font-weight: bolder;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-stretch: normal;
+  font-family: 楷体;
+}
+
+/*焦点新闻 新闻排行 row*/
+.Inland_focus_hot_news_title_row {
+  position: relative;
+  top: -31px;
+}
+
+/*焦点新闻 新闻标题 div*/
+.Inland_focus_news_title_div {
+  position: relative;
+  padding-bottom: 6px;
+  border-bottom: 2px solid black;
+}
+
+/*热点排行 标题 div 边框*/
+.Inland_hot_list_news_title_div {
+  position: relative;
+  padding-bottom: 6px;
+  border-bottom: 2px solid black;
+}
+
+/*焦点新闻 热点排行 内容控制 row*/
+.Inland_focus_hot_news_content_row {
+  position: relative;
+  top: -46px;
+}
+
+/*热点排行 控制 div*/
+.Inland_hot_news_div {
+  position: relative;
+  width: 100%;
+  height: 451px;
+  border-bottom: 1px solid darkgray;
+}
+
+/*热点排行 ul*/
+.Inland_hot_news_div_ul {
+  position: relative;
+  width: 90%;
+  list-style: none;
+}
+
+/*热点排行 所有 ul li*/
+.Inland_hot_news_div_ul li {
+  //background-color: red;
+  float: left;
+  width: 100%;
+}
+
+/*热点排行 ul li span序号*/
+.Inland_hot_news_div_ul li:not(:first-child) .Inland_hot_news_div_ul_li_number {
+  font-size: 19px;
+  color: rgba(255, 148, 78, 0.81);
+  line-height: 40px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+/*热点排行 不包括第一个 ul li*/
+.Inland_hot_news_div_ul li:not(:first-child) {
+  text-align: left;
+  font-size: 14px;
+  line-height: 40px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+}
+
+/*热点排行第一个 li 序号 样式*/
+.Inland_hot_news_div_ul li:first-child .Inland_hot_news_div_ul_li_number {
+  font-size: 19px;
+  background-color: rgba(255, 148, 78, 0.68);
+  padding-left: 6px;
+  padding-right: 6px;
+  color: white;
+}
+
+/*热点排行 第一个 li   样式*/
+.Inland_hot_news_div_ul li:first-child {
+  width: 450px;
+  background-color: rgba(255, 148, 78, 0.4);
+  height: 80px;
+  text-align: left;
+}
+
+/*热点排行 第一个 li 文字 样式*/
+.Inland_hot_news_div_ul li:first-child .Inland_hot_news_div_ul_li_title {
+  position: relative;
+  bottom: 7px;
+  margin-left: 20px;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow: hidden;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  letter-spacing: 1.1px;
+  font-family: 微软雅黑, tahoma;
+}
+
+/*热点排行所有 连接 a*/
+.Inland_hot_news_div_ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.Inland_hot_news_div_ul li a:hover {
+  cursor: pointer;
+  color: indianred;
+  text-decoration: underline;
+}
+
+/*热点排行 新闻标题*/
+.Inland_hot_news_div_ul li:not(:first-child) .Inland_hot_news_div_ul_li_title {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: 微软雅黑, tahoma;
+  margin-left: 20px;
+}
+
+/*热点新闻 序号标题控制 p*/
+.Inland_hot_news_div_ul li:not(:first-child) p {
+  width: 400px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/*本地新闻 标题 div*/
+.Inland_locality_news_div_title {
+  position: relative;
+  padding-bottom: 7px;
+  border-bottom: 2px solid black;
+}
+
+/*本地新闻 row*/
+.Inland_locality_news_row {
+  position: relative;
+  top: -80px;
+  font-size: 26px;
+  font-weight: bolder;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-stretch: normal;
+  font-family: 楷体;
+}
+
+/*视觉焦点 div*/
+.Inland_visual_focus_div {
+  position: relative;
+  top: 10px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid black;
+}
+
+/*本地新闻 视觉焦点 内容 row*/
+.Inland_locality_news_visual_focus_row {
+  position: relative;
+  top: -120px;
+}
+
+/*热点精选 div title*/
+.Inland_hot_spots_title_div {
+  margin-top: 4px;
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: 2px solid black;
+}
+
+/*热点精选 row*/
+.Inland_hot_spots_title_row {
+  position: relative;
+  top: -145px;
+}
+
+/*热点精选标题*/
+.Inland_hot_spots_title_div_p_title {
+  position: relative;
+  font-size: 26px;
+  font-weight: bolder;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-stretch: normal;
+  font-family: 楷体;
+}
+
+/*热门精选文章 ul*/
+.Inland_hot_spots_content_ul {
+  margin-top: 15px;
+  margin-left: -23px;
+  list-style: none;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/*热门精选文章 row 控制*/
+.Inland_hot_spots_content_row {
+  position: relative;
+  top: -140px;
+}
+
+
+/*图片溢出控制器*/
+.Inland_hot_spots_content_ul_li_img_div {
+  position: relative;
+  width: 220px;
+  height: 130px;
+  overflow: hidden;
+}
+
+/*文章封面溢出*/
+.Inland_hot_spots_content_ul_li_img_div img {
+  transition: 1.3s;
+}
+
+.Inland_hot_spots_content_ul_li_img_div img:hover {
+  transform: scale(1.1);
+}
+
+/*热点精选 文章 标题*/
+.Inland_hot_spots_content_ul_li_p_title {
+  position: relative;
+  left: 10px;
+  top: 9px;
+  line-height: 35px;
+  text-align: left;
+  font-size: 19px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: 600;
+  font-family: 微软雅黑, tahoma;
+}
+
+.Inland_hot_spots_content_ul_li_p_title a {
+  text-decoration: none;
+  color: black !important;
+}
+
+.Inland_hot_spots_content_ul_li_p_title a:hover {
+  text-decoration: underline;
+  color: rgba(171, 66, 58, 0.99) !important;
+}
+
+/*热点精选 文章更更多信息*/
+.Inland_hot_spots_content_ul_li_p_more {
+  text-align: center;
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+
+/* 评论数 作者 评论时间控制 s'pan*/
+.Inland_hot_spots_content_ul_li_p_more span {
+  position: relative;
+  margin-left: 10px;
+}
+
+/*新闻文章底部 更多操作 a*/
+.Inland_hot_spots_content_ul_li_p_more span a {
+  color: #929292;
+  text-decoration: none;
+}
+
+.Inland_hot_spots_content_ul_li_p_more span a:hover {
+  color: rgba(171, 66, 58, 0.99) !important;
+}
+
+/*热点精选 格式2 无图片*/
+.Inland_hot_spots_content_ul_li_p_title_layout2 a {
+  text-decoration: none;
+  color: black !important;
+}
+
+/*热点精选 格式2 段落*/
+.Inland_hot_spots_content_ul_li_p_title_layout2 {
+  position: relative;
+  left: 10px;
+  top: 9px;
+  line-height: 35px;
+  text-align: left;
+  font-size: 19px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-weight: 600;
+  font-family: 微软雅黑, tahoma;
+}
+
+.Inland_hot_spots_content_ul_li_p_title_layout2 a:hover {
+  text-decoration: underline;
+  color: rgba(171, 66, 58, 0.99) !important;
+}
+
+/*热点精选 更多 格式2 ul*/
+.Inland_hot_spots_content_ul_layout2 {
+  list-style: none;
+  margin-top: 8px;
+  list-style: none;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/*热点精选 div il 控制*/
+.Inland_hot_spots_content_div {
+  margin-left: 24px;
+  overflow: hidden;
+}
+
+/*热点精选 更多 格式2*/
+.Inland_hot_spots_content_ul_li_p_more_layou2 {
+  //margin-top: 20px;
+  position: relative;
+  top: 17px;
+}
+
+
+.Inland_hot_spots_content_ul_li_p_more_layou2 span {
+  position: relative;
+  margin-left: 10px;
+}
+
+.Inland_hot_spots_content_ul_li_p_more_layou2 span a {
+  color: #929292;
+  text-decoration: none;
+}
+
+.Inland_hot_spots_content_ul_li_p_more_layou2 span a:hover {
+  color: rgba(171, 66, 58, 0.99) !important;
+}
+
+/*热门精选 底部加载中动画*/
+.loading {
+  position: relative;
+  top: 50px;
+  height: 100px;
+  display: none;
+}

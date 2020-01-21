@@ -1,23 +1,22 @@
-
 import moment from "moment";
 
 var storage = {
     set(key, value, expired) {
 
-        let source = { key: key, value: value };
+        let source = {key: key, value: value};
 
         const now = Date.now();
         if (expired) {
-            source.value = JSON.stringify({ data: value, expired: now + (1000 * 60 * expired) });
+            source.value = JSON.stringify({data: value, expired: now + (1000 * 60 * expired)});
         } else {
-            source.value = JSON.stringify({ data: value, expired: now + (1000 * 60) });
+            source.value = JSON.stringify({data: value, expired: now + (1000 * 60)});
         }
         localStorage.setItem(source.key, source.value);
     },
     get(key) {
         const now = Date.now();
 
-        let source = { key: key, value: null };
+        let source = {key: key, value: null};
 
         source.value = JSON.parse(localStorage.getItem(source.key));
 
@@ -30,10 +29,10 @@ var storage = {
                 return source.value.data;
             }
         }
-    },getexpiredtime(key) {
+    }, getexpiredtime(key) {
         const now = Date.now();
 
-        let source = { key: key, value: null };
+        let source = {key: key, value: null};
         /* 从缓存中取出 信息*/
         source.value = JSON.parse(localStorage.getItem(source.key));
 
@@ -51,5 +50,5 @@ var storage = {
     remove(key) {
         localStorage.removeItem(key);
     }
-}
+};
 export default storage;
